@@ -1,3 +1,4 @@
+import type { NoSerialize } from "@builder.io/qwik";
 import {
   $,
   component$,
@@ -15,7 +16,7 @@ interface Star {
 
 export const StarryBackground = component$(() => {
   const state = useStore({
-    canvasRef: null as HTMLCanvasElement | null,
+    canvasRef: null as NoSerialize<HTMLCanvasElement> | null,
     numStars: 50,
     stars: [] as Star[],
   });
@@ -33,7 +34,10 @@ export const StarryBackground = component$(() => {
 
   const drawStar = $((ctx: CanvasRenderingContext2D, star: Star) => {
     ctx.fillStyle = "rgba(255, 255, 255, 0.2)";
-    ctx.fillRect(star.x, star.y, 3, 3);
+
+    ctx.beginPath();
+    ctx.arc(star.x, star.y, 1.5, 0, 2 * Math.PI);
+    ctx.fill();
   });
 
   const updateStars = $((canvas: HTMLCanvasElement) => {
@@ -71,12 +75,6 @@ export const StarryBackground = component$(() => {
 
     animate();
   });
-
-  // // eslint-disable-next-line qwik/no-use-visible-task
-  // useVisibleTask$(() => {
-  //   console.log("!!!");
-  //   console.log(state.canvasRef);
-  // });
 
   return (
     <canvas
