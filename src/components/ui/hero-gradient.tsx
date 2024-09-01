@@ -32,9 +32,9 @@ export const HeroGradient = component$(() => {
           y2="337.787"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D499ED" stop-opacity="0" />
-          <stop offset="0.465" stop-color="#D499ED" stop-opacity="0.1" />
-          <stop offset="1" stop-color="#D499ED" stop-opacity="0" />
+          <stop stop-color="#fff" stop-opacity="0" />
+          <stop offset="0.465" stop-color="#fff" stop-opacity="0.1" />
+          <stop offset="1" stop-color="#fff" stop-opacity="0" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_5_8"
@@ -44,9 +44,9 @@ export const HeroGradient = component$(() => {
           y2="370.762"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D499ED" stop-opacity="0" />
-          <stop offset="0.465" stop-color="#D499ED" stop-opacity="0.1" />
-          <stop offset="1" stop-color="#D499ED" stop-opacity="0" />
+          <stop stop-color="#fff" stop-opacity="0" />
+          <stop offset="0.465" stop-color="#fff" stop-opacity="0.1" />
+          <stop offset="1" stop-color="#fff" stop-opacity="0" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_5_8"
@@ -56,9 +56,9 @@ export const HeroGradient = component$(() => {
           y2="403.909"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D499ED" stop-opacity="0" />
-          <stop offset="0.465" stop-color="#D499ED" stop-opacity="0.1" />
-          <stop offset="1" stop-color="#D499ED" stop-opacity="0" />
+          <stop stop-color="#fff" stop-opacity="0" />
+          <stop offset="0.465" stop-color="#fff" stop-opacity="0.1" />
+          <stop offset="1" stop-color="#fff" stop-opacity="0" />
         </linearGradient>
         <clipPath id="clip0_5_8">
           <rect width="1200" height="1024" fill="white" />
