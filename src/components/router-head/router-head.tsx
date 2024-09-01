@@ -8,7 +8,7 @@ export const RouterHead = component$(() => {
 
   return (
     <head>
-      <title>{head.title} - Portfolio | Mark Schuurmans</title>
+      <title>{head.title + " - Portfolio | Mark Schuurmans"}</title>
       <meta charset="utf-8" />
       {!isDev && (
         <link
