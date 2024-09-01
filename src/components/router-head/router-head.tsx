@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import { useDocumentHead, useLocation } from "@builder.io/qwik-city";
 import { isDev } from "@builder.io/qwik/build";
+import { RouterHeadFonts } from "~/components/router-head/router-head.fonts";
 
 export const RouterHead = component$(() => {
   const head = useDocumentHead();
@@ -48,6 +49,8 @@ export const RouterHead = component$(() => {
             : { dangerouslySetInnerHTML: s.script })}
         />
       ))}
+
+      <RouterHeadFonts />
     </head>
   );
 });
