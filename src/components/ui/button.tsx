@@ -5,18 +5,17 @@ import { Link } from "@builder.io/qwik-city";
 import { component$, Slot } from "@builder.io/qwik";
 
 export const buttonVariants = cva(
-  "inline-flex items-center justify-center rounded-full text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background",
+  "inline-flex items-center justify-center rounded-lg text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
-        secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80 border border-secondary",
+        default: `bg-primary text-primary-foreground hover:bg-primary/90`,
+        secondary: `bg-secondary text-secondary-foreground hover:bg-secondary/20 border border-secondary`,
         // destructive:
         //   "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         // outline:
         //   "border border-input hover:bg-accent hover:text-accent-foreground",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
+        ghost: `hover:bg-secondary hover:text-accent-foreground`,
         // link: "underline-offset-4 hover:underline text-primary",
       },
       size: {
