@@ -9,7 +9,9 @@ export default component$(() => {
       <StarryBackground />
 
       <Navigation />
-      <Slot />
+      <div class="flex-grow">
+        <Slot />
+      </div>
       <Footer />
     </>
   );

@@ -5,7 +5,7 @@ import { HeroGradient } from "~/components/ui/hero-gradient";
 
 export const Navigation = component$(() => {
   return (
-    <nav class="relative mx-auto max-w-7xl">
+    <nav class="relative mx-auto w-full max-w-7xl">
       <div class="absolute right-0 top-0 -z-10">
         <HeroGradient />
       </div>

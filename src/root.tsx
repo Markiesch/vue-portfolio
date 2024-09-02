@@ -13,7 +13,10 @@ export default component$(() => {
   return (
     <QwikCityProvider>
       <RouterHead />
-      <body lang="en" class="bg-background text-foreground">
+      <body
+        lang="en"
+        class="flex min-h-screen flex-col bg-background text-foreground"
+      >
         <RouterOutlet />
         {!isDev && <ServiceWorkerRegister />}
       </body>
